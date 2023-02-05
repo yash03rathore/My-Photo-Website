@@ -1,0 +1,34 @@
+
+
+<nav class="nav-bar">
+            
+              <span class="buttons">  <a href="/">Home</a></span>
+              {{#if isLoggedIn}}
+            <span class="buttons" >  <a id= "logout-button">LogOut</a></span>
+              {{else}}
+                  <span class="buttons">  <a href="/login">Login</a></span>
+              {{/if}}
+
+      
+              
+              <span class="buttons">  <a href="/postimage">Post Image</a></span>
+             
+              <span class="buttons">  <a href="/register">Registration</a></span>
+
+
+              <div class="input-group">
+                    <form method="GET"
+                    action="/posts/search"
+                    enctype="application/x-www-form-urlencoded">
+    <input type="text" class="form-control" placeholder="Search " name="searchTerm" value="{{searchValue}}">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="submit">
+        Search
+      </button>
+    </div>
+    </form>
+  </div>
+
+        </nav>
+
+        

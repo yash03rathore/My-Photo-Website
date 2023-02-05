@@ -1,0 +1,192 @@
+.buttons{
+  
+  background-color: rgba(51, 50, 50, 0.986);
+  border: 1px solid;
+  padding: 12px;
+  border-radius: .50em;
+}
+.buttons:hover{
+  background-color: darkblue;
+}
+
+.heading{
+  background-color: rgba(51, 50, 50, 0.986);
+  padding: 3%;
+  color: azure;
+}
+
+#index-main{
+  padding: 10%;
+  
+}
+#index-main-span{
+  
+  border: 1px solid black;
+  
+  padding: 5%;
+  border-radius: .35em;
+
+}
+
+.nav-bar{
+  padding-top: 30px;
+  
+}
+
+body {
+  text-align: center;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.footer{
+  background-color: rgba(51, 50, 50, 0.986);
+  padding: 5%;
+  
+  color: azure;
+}
+
+a {
+  color: #f0f3f3;
+}
+
+.form{
+  
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.form-input{
+  padding: 10px;
+}
+
+#submit-login {
+  padding:12px;
+  background-color: rgba(51, 50, 50, 0.986);
+  border-radius: .50em;
+  color: azure;
+  
+}
+#submit-login:hover{
+  background-color: darkblue;
+}
+#submit-registration{
+  padding:12px;
+  background-color: rgba(51, 50, 50, 0.986);
+  border-radius: .50em;
+  color: azure;
+}
+#submit-registration:hover{
+  background-color: darkblue;
+}
+
+
+.input{
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: 0.5px 0.5px 1px black;
+  
+}
+
+#submit-postimage{
+  padding:12px;
+  background-color: rgba(51, 50, 50, 0.986);
+  border-radius: .50em;
+  color: azure;
+}
+#submit-postimage:hover{
+  background-color: darkblue;
+}
+
+
+
+.valid{
+  outline: solid green;
+}
+
+.invalid{
+  outline: solid red;
+}
+
+.username-error{
+  color: blue;
+
+}
+.pass-error{
+  color: blue;
+}
+.conpass-error{
+  color: blue;
+}
+
+.product-list{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-auto-rows: 40vh;
+gap: 1rem;
+
+}
+
+.product-card{
+  display: grid;
+  border-radius: .35em;
+  box-shadow: 2px 2px 10px 2px #eee;
+  grid-template-areas: "info";
+}
+.prod-img{
+  grid-area: info;
+  height: 100%;
+  width: 100%;
+  border-radius: .35rem ;
+  border-radius: .35rem ;
+  object-fit: cover;
+}
+.prod-info{
+grid-area: info;
+display: flex;
+width: 100%;
+height: 25px;
+z-index: 3;
+padding: .3em;
+align-self: flex-end;
+background-color: aliceblue;
+font-size: .8rem;
+}
+.prod-title{
+  margin: 0;
+  background-color: transparent;
+  flex: 1 75%;
+  overflow: hidden;
+}
+.prod-cost::before{
+content: "$";
+}
+.prod-cost{
+  flex: 1 25%;
+  margin: 0;
+  background-color: transparent;
+  justify-self: flex-end;
+
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.input-group{
+  margin-top: 30px;
+}
